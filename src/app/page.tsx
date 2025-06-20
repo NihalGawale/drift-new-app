@@ -1,3 +1,9 @@
+import NavBar from "./components/NavBar/navBar";
+
 export default function Home() {
-  return <>Drift app</>;
+  return (
+    <>
+      <NavBar />
+    </>
+  );
 }
