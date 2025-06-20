@@ -18,11 +18,9 @@ if (!cached) {
 async function dbConnect() {
   const MONGODB_URI = process.env.MONGODB_URI;
 
-  console.log(MONGODB_URI,"uri *****");
-  
   if (!MONGODB_URI) {
     throw new Error(
-      "[DB/CLIENT] Please define the MONGODB_URI environment variable in enviornment variables."
+      "[DB/CLIENT] Please define the MONGODB_URI environment variable in enviornment variables.",
     );
   }
   if (cached.conn) {

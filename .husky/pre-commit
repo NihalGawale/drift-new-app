@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Run prettier via lint-staged before tests
+pnpm dlx lint-staged
