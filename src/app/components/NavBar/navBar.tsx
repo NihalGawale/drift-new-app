@@ -10,7 +10,7 @@ const NavBar = () => {
         <div>
           <MenuIcon />
         </div>
-        <div className="w-24 h-20 relative ml-[96px]">
+        <div className="w-24 h-20 relative ml-[103px]">
           <Image src="/assets/brand-logo.png" fill={true} alt="drift-brand-logo" />
         </div>
         <div className="flex gap-x-5">

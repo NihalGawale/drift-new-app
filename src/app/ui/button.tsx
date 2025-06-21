@@ -12,7 +12,7 @@ export async function SignUpButton({ buttonText }: ColouredButtonProps) {
 
 export async function ColouredButton({ buttonText }: ColouredButtonProps) {
   return (
-    <button className="w-[150px] rounded-full py-3 bg-[#C4A77D] font-inter text-sm font-semibold">
+    <button className="w-[150px] rounded-full py-3 bg-[#C4A77D] font-inter text-sm font-semibold shadow-gray-400 shadow-md">
       {buttonText}
     </button>
   );
