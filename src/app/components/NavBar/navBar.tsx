@@ -6,12 +6,29 @@ import { MenuIcon, WhiteMenuIcon } from "@/app/utils/icons";
 import Image from "next/image";
 
 const NavBar = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState({
+    isScrolled: false,
+    scrolledValue: 0,
+  });
+  const [hideNavBar, setHideNavBar] = useState(false);
 
   useEffect(() => {
+    let lastScrollY = window.scrollY;
+
     const handleScroll = () => {
-      const offset = window.scrollY;
-      setScrolled(offset > 1450); // adjust 800 to your hero height
+      const currentScrollY = window.scrollY;
+
+      // Determine scroll direction
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setHideNavBar(true); // Scrolling down
+      } else {
+        setHideNavBar(false); // Scrolling up
+      }
+
+      // Change logo after hero section (e.g., 800px)
+      setScrolled({ isScrolled: currentScrollY > 800, scrolledValue: currentScrollY });
+
+      lastScrollY = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -19,17 +36,22 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div id="navbar" className="w-full h-20 z-10 flex justify-center fixed">
-      <div className="w-[90%] h-full flex justify-between items-center">
-        <div>{scrolled ? <MenuIcon /> : <WhiteMenuIcon />}</div>
-        <div className="w-24 h-20 relative ml-[103px]">
+    <div
+      id="navbar"
+      className={` ${
+        hideNavBar ? "-translate-y-full" : "translate-y-0 backdrop-blur-[5px]"
+      } ${scrolled?.scrolledValue < 300 && "backdrop-blur-none"}  w-full h-20 z-10 flex justify-center fixed`}
+    >
+      <div className={`w-[90%] h-full flex justify-center md:justify-between items-center`}>
+        <div className="hidden md:flex">{scrolled ? <MenuIcon /> : <WhiteMenuIcon />}</div>
+        <div className="w-24 h-20 relative md:ml-[103px]">
           <Image
             src={scrolled ? "/assets/brand-logo.png" : "/assets/brand-logo-white.png"}
             fill={true}
             alt="drift-brand-logo"
           />
         </div>
-        <div className="flex gap-x-5">
+        <div className="hidden md:flex gap-x-5">
           <button className="text-sm">Login</button>
           <SignUpButton scrolled={scrolled} buttonText="Sign Up" />
         </div>

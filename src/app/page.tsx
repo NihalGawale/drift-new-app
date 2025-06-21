@@ -5,7 +5,7 @@ import Products from "./components/Products/products";
 
 export default function Home() {
   return (
-    <div className="w-full tracking-wide">
+    <div className="w-full h-full tracking-wide">
       <NavBar />
       <HeroSection />
       <AboutUs />
