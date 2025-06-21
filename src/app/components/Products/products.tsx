@@ -5,7 +5,7 @@ import React from "react";
 const exploreButtonText = "EXPLORE OUR COLLECTIONS";
 const Products = () => {
   return (
-    <div className="w-full h-auto flex flex-col items-center">
+    <div id="products" className="w-full h-auto flex flex-col items-center">
       <div className="w-full p-16 flex justify-center">
         <div className="flex w-[85%] h-[650px]">
           <div className="w-1/2 relative">
@@ -99,7 +99,7 @@ const Products = () => {
         </div>
       </div>
       <div className="w-full flex justify-center mt-20">
-        <button className="w-auto rounded-full py-5 px-10 bg-[#C4A77D] font-inter text-sm font-semibold shadow-gray-400 shadow-md">
+        <button className="w-auto rounded-full py-5 px-10 bg-[#C4A77D] font-inter text-sm font-semibold shadow-gray-400 shadow-md hover:text-white cursor-pointer ">
           {exploreButtonText}
         </button>
       </div>

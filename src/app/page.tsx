@@ -1,3 +1,4 @@
+import AboutUs from "./components/AboutUs/aboutUs";
 import HeroSection from "./components/HeroSection/heroSection";
 import NavBar from "./components/NavBar/navBar";
 import Products from "./components/Products/products";
@@ -7,6 +8,7 @@ export default function Home() {
     <div className="w-full tracking-wide">
       <NavBar />
       <HeroSection />
+      <AboutUs />
       <Products />
     </div>
   );

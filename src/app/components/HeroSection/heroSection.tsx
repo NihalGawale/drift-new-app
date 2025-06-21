@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="h-[800px] w-full relative flex justify-center">
+    <div id="hero-section" className="h-[800px] w-full relative flex justify-center">
       <video
         className="w-full h-full"
         autoPlay
