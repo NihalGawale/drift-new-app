@@ -1,18 +1,22 @@
+import { SignUpButton } from "@/app/ui/button";
 import { MenuIcon } from "@/app/utils/icons";
 import Image from "next/image";
 import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="w-full h-20 fixed  flex justify-center">
+    <div className="w-full h-20 z-10 flex justify-center fixed">
       <div className="w-[90%] h-full flex justify-between items-center">
         <div>
           <MenuIcon />
         </div>
-        <div className="w-20 h-16 relative ml-24">
-          <Image src="/assets/brand-logo.webp" fill={true} alt="drift-brand-logo" />
+        <div className="w-24 h-20 relative ml-[96px]">
+          <Image src="/assets/brand-logo.png" fill={true} alt="drift-brand-logo" />
         </div>
-        <div className="text-base"></div>
+        <div className="flex gap-x-5">
+          <button className="text-sm">Login</button>
+          <SignUpButton buttonText="Sign Up" />
+        </div>
       </div>
     </div>
   );
