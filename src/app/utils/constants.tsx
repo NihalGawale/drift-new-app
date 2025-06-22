@@ -17,14 +17,14 @@ export const contactLeftConstants = [
   },
   {
     key: "email",
-    icon: <EmailIcon fill="white" />,
+    icon: <EmailIcon />,
     title: "Email",
     description: "Reach us anytime for inquiries or support.",
     contact: "teamdriftwear@gmail.com",
   },
   {
     key: "phone",
-    icon: <PhoneIcon fill="white" />,
+    icon: <PhoneIcon />,
     title: "Phone",
     description: "Call us for immediate assistance or questions.",
     contact: "+91 7219591231",
