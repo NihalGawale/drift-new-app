@@ -1,3 +1,5 @@
+import { FacebookIconProps, InstagramIconProps, TwitterIconProps } from "../types";
+
 export function MenuIcon() {
   return (
     <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,9 +95,15 @@ export function PhoneIcon() {
   );
 }
 
-export function FacebookIcon() {
+export function FacebookIcon({ width, height }: FacebookIconProps) {
   return (
-    <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 14 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M8.85862 24V13.0533H12.5315L13.0825 8.78588H8.85862V6.06176C8.85862 4.82664 9.2002 3.98492 10.9734 3.98492L13.2312 3.98399V0.167076C12.8407 0.116334 11.5004 0 9.94044 0C6.68292 0 4.45276 1.98836 4.45276 5.63912V8.78588H0.768738V13.0533H4.45276V24H8.85862Z"
         fill="#C4A77D"
@@ -104,9 +112,15 @@ export function FacebookIcon() {
   );
 }
 
-export function InstagramIcon() {
+export function InstagramIcon({ width, height }: InstagramIconProps) {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g clipPath="url(#clip0_323_828)">
         <path
           d="M18.9765 4.44141C18.6552 4.44141 18.3938 4.70283 18.3938 5.02406C18.3938 5.3453 18.6552 5.60672 18.9765 5.60672C19.2977 5.60672 19.5591 5.34534 19.5591 5.02406C19.5591 4.70278 19.2977 4.44141 18.9765 4.44141Z"
@@ -130,9 +144,15 @@ export function InstagramIcon() {
   );
 }
 
-export function TwitterIcon() {
+export function TwitterIcon({ width, height }: TwitterIconProps) {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M24 4.5585C23.1075 4.95 22.1565 5.2095 21.165 5.3355C22.185 4.7265 22.9635 3.7695 23.3295 2.616C22.3785 3.183 21.3285 3.5835 20.2095 3.807C19.3065 2.8455 18.0195 2.25 16.6155 2.25C13.8915 2.25 11.6985 4.461 11.6985 7.1715C11.6985 7.5615 11.7315 7.9365 11.8125 8.2935C7.722 8.094 4.1025 6.1335 1.671 3.147C1.2465 3.8835 0.9975 4.7265 0.9975 5.634C0.9975 7.338 1.875 8.8485 3.183 9.723C2.3925 9.708 1.617 9.4785 0.96 9.117C0.96 9.132 0.96 9.1515 0.96 9.171C0.96 11.562 2.6655 13.548 4.902 14.0055C4.5015 14.115 4.065 14.1675 3.612 14.1675C3.297 14.1675 2.979 14.1495 2.6805 14.0835C3.318 16.032 5.127 17.4645 7.278 17.511C5.604 18.8205 3.4785 19.6095 1.1775 19.6095C0.774 19.6095 0.387 19.5915 0 19.542C2.1795 20.9475 4.7625 21.75 7.548 21.75C16.602 21.75 21.552 14.25 21.552 7.749C21.552 7.5315 21.5445 7.3215 21.534 7.113C22.5105 6.42 23.331 5.5545 24 4.5585Z"
         fill="#C4A77D"

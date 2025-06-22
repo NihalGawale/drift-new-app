@@ -37,7 +37,7 @@ const FAQ = () => {
   return (
     <div
       id="faq"
-      className="w-full min-h-[872px] max-h-auto  relative flex justify-center p-6 md:p-16"
+      className="w-full md:min-h-[872px] max-h-auto  relative flex justify-center p-6 md:p-16"
     >
       <div className="w-full h-full flex flex-col gap-y-20">
         <div className="md:w-[85%]">
