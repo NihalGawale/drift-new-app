@@ -12,13 +12,14 @@ const HeroSection = () => {
         playsInline
         src="/assets/hero-section-video.mp4"
       ></video>
+      <div className="absolute inset-0 bg-black/40 z-10" />
 
-      <div className="absolute top-[400px] md:top-[486px] w-[300px] md:w-[672px] flex justify-center flex-col gap-y-4 md:gap-y-9">
+      <div className="absolute z-20 top-[400px] md:top-[486px] w-[300px] md:w-[672px] flex justify-center flex-col gap-y-4 md:gap-y-9">
         <div>
-          <p className="text-3xl md:text-5xl flex justify-center font-bold font-cormorant">
+          <p className="text-3xl md:text-5xl flex justify-center font-bold font-cormorant text-white">
             Glide Beyond the Usual.
           </p>
-          <p className="text-xs md:text-lg font-normal p-4 text-center font-inter">
+          <p className="text-xs md:text-lg font-normal p-4 text-center font-inter text-white">
             Discover Drift — a premium sneaker brand redefining comfort and style for the modern
             explorer. Designed for all-day wear, our shoes blend streetwise aesthetics with
             performance-driven innovation.

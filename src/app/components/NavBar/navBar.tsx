@@ -40,13 +40,17 @@ const NavBar = () => {
       id="navbar"
       className={` ${
         hideNavBar ? "-translate-y-full" : "translate-y-0 backdrop-blur-[5px]"
-      } ${scrolled?.scrolledValue < 300 && "backdrop-blur-none"}  w-full h-20 z-10 flex justify-center fixed`}
+      } ${scrolled?.scrolledValue < 300 && "backdrop-blur-none"}  w-full h-20 z-20 flex md:justify-center fixed`}
     >
-      <div className={`w-[90%] h-full flex justify-center md:justify-between items-center`}>
-        <div className="hidden md:flex">{scrolled ? <MenuIcon /> : <WhiteMenuIcon />}</div>
+      <div className={`w-[50%] ml-10 md:ml-0 md:w-[90%] h-full flex justify-between items-center`}>
+        <div className="">{scrolled?.scrolledValue > 800 ? <MenuIcon /> : <WhiteMenuIcon />}</div>
         <div className="w-24 h-20 relative md:ml-[103px]">
           <Image
-            src={scrolled ? "/assets/brand-logo.png" : "/assets/brand-logo-white.png"}
+            src={
+              scrolled?.scrolledValue > 800
+                ? "/assets/brand-logo.png"
+                : "/assets/brand-logo-white.png"
+            }
             fill={true}
             alt="drift-brand-logo"
           />

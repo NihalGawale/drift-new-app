@@ -11,7 +11,7 @@ const AboutUs = () => {
         <p className="w-[80%] md:w-full font-cormorant text-4xl md:text-6xl font-bold text-center">
           The Beginning of a Legacy
         </p>
-        <div className="w-[85%] font-inter text-xs md:text-lg font-normal flex flex-col gap-y-4">
+        <div className="w-[85%] font-inter text-xs md:text-lg font-normal flex flex-col gap-y-4 md:text-center">
           <p>
             At DRIFT, we craft premium sneakers for those who move with quiet confidence — through{" "}
             <span className="italic font-medium"> boardrooms, airports, studios, and streets.</span>
