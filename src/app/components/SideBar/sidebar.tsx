@@ -1,6 +1,7 @@
 import React from "react";
 import { CancelIcon, ChevronRightIcon } from "../icons";
 import Image from "next/image";
+import useIsMobile from "@/app/hooks/useMobile";
 
 interface SidebarProps {
   openSideBar: boolean;
@@ -8,6 +9,7 @@ interface SidebarProps {
 }
 
 export default function SideBar({ openSideBar, setOpenSideBar }: SidebarProps) {
+  const isMobile = useIsMobile();
   return (
     <>
       <div
@@ -15,15 +17,15 @@ export default function SideBar({ openSideBar, setOpenSideBar }: SidebarProps) {
           openSideBar ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out shadow-xl`}
       >
-        <div className="h-auto md:py-4 md:px-16 mt-3">
+        <div className="h-auto md:py-4 md:px-16 mt-10 flex flex-col gap-y-6">
           <div className="flex items-center justify-center md:px-4 md:py-3 relative">
             <button
-              className="cursor-pointer absolute left-3 top-6.5"
+              className="cursor-pointer absolute left-4 top-0.5"
               onClick={() => setOpenSideBar(false)}
             >
               <CancelIcon />
             </button>
-            <div className="w-22 h-18 relative">
+            <div className={`${isMobile ? "w-12 h-6" : " w-20 h-10 "} relative`}>
               <Image src="/assets/brand-logo.png" alt="Logo" className="h-6" fill />
             </div>
           </div>
