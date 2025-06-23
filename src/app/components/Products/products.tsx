@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { ColouredButton } from "@/app/ui/button";
+import { ColouredButton } from "@/app/components/ui/button";
 import Image from "next/image";
 import useIsMobile from "@/app/hooks/useMobile";
 

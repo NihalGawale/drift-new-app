@@ -1,4 +1,4 @@
-import { EmailIcon, LocationIcon, PhoneIcon } from "./icons";
+import { EmailIcon, LocationIcon, PhoneIcon } from "../components/icons";
 
 export const navBarItems = [
   { id: "products", value: "Products", isClicked: false },

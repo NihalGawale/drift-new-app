@@ -1,6 +1,6 @@
 "use client";
 
-import { MinusIcon, PlusIcon } from "@/app/utils/icons";
+import { MinusIcon, PlusIcon } from "@/app/components/icons";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import React, { useState } from "react";
 

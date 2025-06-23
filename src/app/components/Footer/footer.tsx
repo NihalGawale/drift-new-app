@@ -2,7 +2,7 @@
 
 import useIsMobile from "@/app/hooks/useMobile";
 import { contactLeftConstants } from "@/app/utils/constants";
-import { FacebookIcon, InstagramIcon, TermsPolicyDot, TwitterIcon } from "@/app/utils/icons";
+import { FacebookIcon, InstagramIcon, TermsPolicyDot, TwitterIcon } from "@/app/components/icons";
 import Image from "next/image";
 import React from "react";
 

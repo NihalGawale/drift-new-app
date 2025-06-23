@@ -1,4 +1,4 @@
-import { ColouredButton } from "@/app/ui/button";
+import { ColouredButton } from "@/app/components/ui/button";
 import React from "react";
 
 const HeroSection = () => {
