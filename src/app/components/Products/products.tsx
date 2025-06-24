@@ -3,6 +3,7 @@ import React from "react";
 import { ColouredButton } from "@/app/components/ui/button";
 import Image from "next/image";
 import useIsMobile from "@/app/hooks/useMobile";
+import Link from "next/link";
 
 const exploreButtonText = "EXPLORE OUR COLLECTIONS";
 const Products = () => {
@@ -133,9 +134,11 @@ const Products = () => {
           )}
         </div>
         <div className="w-full flex justify-center my-20 md:mt-36 md:mb-0">
-          <button className="w-auto rounded-full py-3 md:py-5 px-6 md:px-10 bg-[#C4A77D] font-inter text-sm shadow-gray-400 shadow-md hover:text-white cursor-pointer ">
-            {exploreButtonText}
-          </button>
+          <Link href="/drift-collections">
+            <button className="w-auto rounded-full py-3 md:py-5 px-6 md:px-10 bg-[#C4A77D] font-inter text-sm shadow-gray-400 shadow-md hover:text-white cursor-pointer">
+              {exploreButtonText}
+            </button>
+          </Link>
         </div>
       </div>
     </div>

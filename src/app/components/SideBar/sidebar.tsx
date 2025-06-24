@@ -8,6 +8,20 @@ interface SidebarProps {
   setOpenSideBar: (value: boolean) => void;
 }
 
+interface sidebarOptionsListType {
+  id: string;
+  value: string;
+}
+
+const sidebarOptionsList = [
+  { id: "product-1", value: "Products" },
+  { id: "our-story", value: "Our Story" },
+  { id: "faq", value: "FAQ's" },
+  { id: "cart", value: "Cart" },
+  { id: "my-orders", value: "My Orders" },
+  { id: "contact-us", value: "Contact Us" },
+];
+
 export default function SideBar({ openSideBar, setOpenSideBar }: SidebarProps) {
   const isMobile = useIsMobile();
   return (
@@ -31,12 +45,12 @@ export default function SideBar({ openSideBar, setOpenSideBar }: SidebarProps) {
           </div>
 
           <ul className="py-4 px-10 space-y-4 text-base md:text-lg font-inter">
-            {["Products", "Our Story", "FAQ's", "Cart", "My Orders", "Contact Us"].map((item) => (
+            {sidebarOptionsList.map((item: sidebarOptionsListType) => (
               <li
-                key={item}
+                key={item?.id}
                 className="flex justify-between items-center cursor-pointer hover:text-[#1A1A1A]"
               >
-                <span>{item}</span>
+                <span>{item?.value}</span>
                 <ChevronRightIcon />
               </li>
             ))}
