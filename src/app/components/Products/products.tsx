@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { ColouredButton } from "@/app/components/ui/button";
+import { ExploreButton } from "@/app/components/ui/button";
 import Image from "next/image";
 import useIsMobile from "@/app/hooks/useMobile";
 import Link from "next/link";
@@ -30,7 +30,7 @@ const Products = () => {
                 </p>
               </div>
               <div className="flex justify-center md:justify-start">
-                <ColouredButton buttonText="Explore" />
+                <ExploreButton buttonText="Explore" />
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ const Products = () => {
                 </p>
               </div>
               <div className="flex justify-center md:justify-start">
-                <ColouredButton buttonText="Explore" />
+                <ExploreButton buttonText="Explore" />
               </div>
             </div>
           </div>
@@ -92,7 +92,7 @@ const Products = () => {
                 </p>
               </div>
               <div className="flex justify-center md:justify-start">
-                <ColouredButton buttonText="Explore" />
+                <ExploreButton buttonText="Explore" />
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@ const Products = () => {
                 </p>
               </div>
               <div className="flex justify-center md:justify-start">
-                <ColouredButton buttonText="Explore" />
+                <ExploreButton buttonText="Explore" />
               </div>
             </div>
           </div>

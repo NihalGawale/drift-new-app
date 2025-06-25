@@ -25,7 +25,7 @@ export function SignUpButton({ buttonText, scrolled, pathname }: ColouredButtonP
   );
 }
 
-export function ColouredButton({ buttonText }: ColouredButtonProps) {
+export function ExploreButton({ buttonText }: ColouredButtonProps) {
   return (
     <button className="w-[150px] rounded-full p-3 md:p-3.5 bg-[#D5CDC4] font-inter text-sm shadow-gray-400 shadow-md hover:text-[#F8F5F0] cursor-pointer">
       {buttonText}

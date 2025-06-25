@@ -1,7 +1,10 @@
-import { ColouredButton } from "@/app/components/ui/button";
+"use client";
+import { useRouter } from "next/navigation";
 import React from "react";
 
+const exploreButtonText = "Explore";
 const HeroSection = () => {
+  const navigate = useRouter();
   return (
     <div id="hero-section" className="h-[680px] md:h-[800px] w-full relative flex justify-center">
       <video
@@ -26,7 +29,12 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="flex justify-center">
-          <ColouredButton buttonText="Explore" />
+          <button
+            className="w-[150px] rounded-full p-3 md:p-3.5 bg-[#D5CDC4] font-inter text-sm shadow-gray-400 shadow-md hover:text-[#F8F5F0] cursor-pointer"
+            onClick={() => navigate.push("/drift-collections")}
+          >
+            {exploreButtonText}
+          </button>
         </div>
       </div>
     </div>
